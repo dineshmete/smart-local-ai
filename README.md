@@ -12,7 +12,7 @@ The project is a single Open WebUI **Pipe function** (`smart_router.py`) plus th
 - **Smart Assistant** (`qwen2.5:7b-instruct`): general questions, code, files and images, and live questions.
 - **Live questions:** DuckDuckGo search (via `ddgs`), then the router reads the text of the top pages and gives it to Smart Assistant. Weather questions detect the city name and fall back to `DEFAULT_CITY`.
 - **Date and time:** Answered directly from the server clock, without search or a model.
-- **Follow-ups:** Short follow-up questions such as "aur kal?" are searched together with the previous question.
+- **Follow-ups:** Short follow-up questions such as "what about yesterday?" are searched together with the previous question.
 - **Language:** Replies in the same language or script as the user. Roman Hinglish gets Roman-letter replies.
 - **Fallback:** If the chosen model fails, the router uses Quick Chat.
 
